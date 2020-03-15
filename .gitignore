@@ -1,1 +1,4 @@
-data.csv
+*.png
+.Rproj.user
+.Rhistory
+.DS_Store
