@@ -105,12 +105,14 @@ saveWidget(ll, file="index.html", title = "五反田ランチスポット")
 gg <- data %>%
   count(category) %>%
   ggplot(aes(x = reorder(category, -n), y = n)) + geom_bar(stat = 'identity') +
-  geom_text(aes(label = n), vjust = 1.1, color = "white") +
+  geom_text(aes(label = n), vjust = 1.1, color = "white", size = 5.5) +
   labs(x = 'カテゴリ', y = '店舗数') +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 14),
+        axis.text.y = element_text(size = 14),
+        axis.title = element_text(size = 16),
         text = element_text(family = 'Hiragino Kaku Gothic Pro W3')
        )
-ggsave('bar.png', gg, dpi = 200, width = 7, height = 4.5)
+ggsave('bar.png', gg, dpi = 200, width = 7, height = 5.2)
 
 # 西五反田 vs 東五反田の図を生成する
 gg2 <- data %>%
