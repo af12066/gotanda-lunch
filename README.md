@@ -1,6 +1,8 @@
 # gotanda-lunch
 
-五反田のランチ情報を可視化するR script。
+五反田のランチ情報を可視化するR script。以下の記事用です。
+
+[五反田のランチ事情について考える（2020年版） - freee Developers Blog](https://developers.freee.co.jp/entry/gotanda-lunch-2020)
 
 ## Usage
 
